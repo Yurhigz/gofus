@@ -1,6 +1,7 @@
 package main
 
 import (
+<<<<<<< HEAD
 	"encoding/hex"
 	"fmt"
 	"log"
@@ -15,4 +16,22 @@ func main() {
 
 	fmt.Println("Données décodées:", data)
 	fmt.Printf("Données en string : %s\n", string(data))
+=======
+    "log"
+    
+    "gofus/internal/proxy"
+    "gofus/config"
+)
+
+func main() {
+    cfg, err := config.Load()
+    if err != nil {
+        log.Fatalf("Erreur de configuration: %v", err)
+    }
+
+    proxy := proxy.New(cfg.ClientAddr, cfg.ServerAddr)
+    if err := proxy.Start(); err != nil {
+        log.Fatalf("Erreur du proxy: %v", err)
+    }
+>>>>>>> e8a42577e055c88370a3bcd640a2e49875f63825
 }
