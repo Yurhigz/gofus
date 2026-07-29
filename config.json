@@ -1,0 +1,10 @@
+{
+  "profiles": [
+    {
+      "name": "Default",
+      "windows": [],
+      "cycle_hotkey": "ctrl+shift+tab"
+    }
+  ],
+  "selected_profile": "Default"
+}

@@ -1,0 +1,13 @@
+[project]
+name = "gofus"
+version = "0.1.0"
+description = "Utilitaire de navigation entre fenêtres Dofus"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.6",
+    "pywin32>=306",
+    "keyboard>=0.13.5",
+]
+
+[tool.uv]
+package = false
